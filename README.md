@@ -2,7 +2,7 @@
 
 ![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-`markdown
+
 # 🧩 Trello Board Generator from JSON
 
 🚀 Automatically create a fully structured Trello board — with lists and cards — using a simple JSON file and GitHub Actions. Ideal for developers, productivity enthusiasts, and teams that want to automate repetitive Trello setups.
