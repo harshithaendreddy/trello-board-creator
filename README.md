@@ -1,8 +1,14 @@
+Sure! Here's your exact `README.md` content, formatted correctly with the markdown block closed properly:
+
+---
+
+`````markdown
 # Trello Board Generator 🚀
 
 ![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+````markdown
 # 🧩 Trello Board Generator from JSON
 
 🚀 Automatically create a fully structured Trello board — with lists and cards — using a simple JSON file and GitHub Actions. Ideal for developers, productivity enthusiasts, and teams that want to automate repetitive Trello setups.
@@ -22,6 +28,8 @@
 ## 📁 Example Use Case
 
 ### 🔧 Input (JSON file)
+
+```json
 {
   "name": "Personal Developer Dashboard",
   "lists": [
@@ -39,12 +47,13 @@
     }
   ]
 }
-`
+`````
 
 ### 🪄 Output
 
 A full Trello board like this (auto-created):
 
+```
 📌 Personal Developer Dashboard
  ┣ 📂 To Do
  ┃ ┣ 📝 Build UI for Trello Creator
@@ -55,6 +64,8 @@ A full Trello board like this (auto-created):
  ┗ 📂 Done
     ┣ 📝 Created Python Script
     ┗ 📝 Setup Trello API Access
+```
+
 ---
 
 ## 🔧 Setup Instructions
@@ -65,9 +76,12 @@ A full Trello board like this (auto-created):
 * Copy your API key and generate a token
 
 ### 2. 📂 Clone This Repository
-bash
+
+```bash
 git clone https://github.com/harshithaendreddy/trello-board-creator.git
 cd trello-board-creator
+```
+
 ### 3. 🔐 Add Secrets in GitHub
 
 Go to your repo → Settings → Secrets → Actions → **New Repository Secret**
@@ -85,14 +99,16 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 ---
 
 ## 📦 Project Structure
-bash
-📦 trello-board-creator
+
+```bash
+.
 ├── .github/
 │   └── workflows/
-│       └── run.yml            # GitHub Actions workflow file
-├── DeveloperDashboardBoard.json  # JSON board template
-├── trello_import.py           # Python script that creates the board
+│       └── run.yml         # GitHub Action workflow
+├── DeveloperDashboardBoard.json # Your board definition
+├── trello_import.py         # Python script to create the board
 └── README.md
+```
 
 ---
 
@@ -115,13 +131,12 @@ bash
 
 ## 🤝 Let's Connect
 
-Love building dev tools or interested in automation workflows like this?
-Feel free to ⭐️ the repo or [connect with me on LinkedIn]([https://www.linkedin.com/in//](https://www.linkedin.com/in/harshitha-endreddy/))!
+If you're hiring engineers who love building developer tools and automating workflows, I'd love to connect!
 
 ---
 
-> "Automation isn’t just for deployments — it’s for everything repetitive." 💡
+## 📄 License
 
-```
+MIT License
 
----
+
