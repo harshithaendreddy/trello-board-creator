@@ -118,8 +118,7 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 
 ---
 
-## 🧠 Why This Project?
-
+🧠 Why This Project?
 ✅ Demonstrates real-world API integration
 ✅ Highlights DevOps knowledge (CI/CD via GitHub Actions)
 ✅ Encourages automation and productivity-driven development
@@ -132,9 +131,15 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 If you're hiring engineers who love building developer tools and automating workflows, I'd love to connect!
 
 ---
+---
+
+> 💡 **"Automation isn’t just for deployments — it’s for everything repetitive."**
+
+---
 
 ## 📄 License
 
 MIT License
+
 
 
