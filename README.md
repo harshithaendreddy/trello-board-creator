@@ -1,4 +1,4 @@
-````markdown
+
 # Trello Board Generator 🚀
 
 ![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
