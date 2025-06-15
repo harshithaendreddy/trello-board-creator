@@ -2,16 +2,15 @@ import requests
 import time
 import json
 import os
-from dotenv import load_dotenv
 
-load_dotenv()  # Load .env if running locally
-
+# Directly access GitHub Actions secrets via environment variables
 API_KEY = os.getenv('TRELLO_API_KEY')
 TOKEN = os.getenv('TRELLO_TOKEN')
 
 if not API_KEY or not TOKEN:
     raise Exception("❌ API key or token not found in environment variables.")
 
+# Load board structure from JSON
 with open('DeveloperDashboardBoard.json') as f:
     board_data = json.load(f)
 
@@ -64,4 +63,4 @@ for list_data in board_data["lists"]:
             print(f"📝  Added card: {card_name}")
         else:
             print(f"⚠️  Failed to add card: {card_name}")
-        time.sleep(0.2)
+        time.sleep(0.2)  # Prevent hitting Trello API rate limits
