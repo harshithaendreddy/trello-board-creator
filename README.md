@@ -22,7 +22,6 @@
 ## 📁 Example Use Case
 
 ### 🔧 Input (JSON file)
-json
 {
   "name": "Personal Developer Dashboard",
   "lists": [
@@ -87,13 +86,14 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 
 ## 📦 Project Structure
 bash
-.
+📦 trello-board-creator
 ├── .github/
 │   └── workflows/
-│       └── run.yml         # GitHub Action workflow
-├── DeveloperDashboardBoard.json # Your board definition
-├── trello_import.py         # Python script to create the board
+│       └── run.yml            # GitHub Actions workflow file
+├── DeveloperDashboardBoard.json  # JSON board template
+├── trello_import.py           # Python script that creates the board
 └── README.md
+
 ---
 
 ## 💡 Future Development
