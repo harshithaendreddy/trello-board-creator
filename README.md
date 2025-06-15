@@ -1,10 +1,9 @@
-`````markdown
+````markdown
 # Trello Board Generator 🚀
 
 ![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-````markdown
 # 🧩 Trello Board Generator from JSON
 
 🚀 Automatically create a fully structured Trello board — with lists and cards — using a simple JSON file and GitHub Actions. Ideal for developers, productivity enthusiasts, and teams that want to automate repetitive Trello setups.
@@ -13,10 +12,10 @@
 
 ## 🌟 Features
 
-- 🔄 **Automated Trello board creation** via REST API
-- 🧾 **JSON-based configuration** for full control over lists and cards
-- 🤖 **GitHub Actions** integration for seamless automation
-- 🔐 API key and token managed securely with **GitHub Secrets**
+- 🔄 **Automated Trello board creation** via REST API  
+- 🧾 **JSON-based configuration** for full control over lists and cards  
+- 🤖 **GitHub Actions** integration for seamless automation  
+- 🔐 API key and token managed securely with **GitHub Secrets**  
 - 💻 Built with **Python + requests**
 
 ---
@@ -43,7 +42,7 @@
     }
   ]
 }
-`````
+````
 
 ### 🪄 Output
 
@@ -68,7 +67,7 @@ A full Trello board like this (auto-created):
 
 ### 1. 🔑 Get Your Trello API Key and Token
 
-* Go to [https://trello.com/app-key](https://trello.com/app-key)
+* Visit [https://trello.com/app-key](https://trello.com/app-key)
 * Copy your API key and generate a token
 
 ### 2. 📂 Clone This Repository
@@ -100,9 +99,9 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 .
 ├── .github/
 │   └── workflows/
-│       └── run.yml         # GitHub Action workflow
+│       └── run.yml               # GitHub Action workflow
 ├── DeveloperDashboardBoard.json # Your board definition
-├── trello_import.py         # Python script to create the board
+├── trello_import.py             # Python script to create the board
 └── README.md
 ```
 
