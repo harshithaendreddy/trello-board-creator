@@ -3,25 +3,25 @@ import time
 import json
 import os
 
-# Directly access GitHub Actions secrets via environment variables
+# Access API key and token from GitHub Actions Secrets
 API_KEY = os.getenv('TRELLO_API_KEY')
 TOKEN = os.getenv('TRELLO_TOKEN')
 
 if not API_KEY or not TOKEN:
     raise Exception("❌ API key or token not found in environment variables.")
 
-# Load board structure from JSON
+# Load board structure from JSON file
 with open('DeveloperDashboardBoard.json') as f:
     board_data = json.load(f)
 
-# Create the board
+# Step 1: Create the board
 board_name = board_data["name"]
 create_board_url = "https://api.trello.com/1/boards/"
 params = {
     "name": board_name,
     "key": API_KEY,
     "token": TOKEN,
-    "defaultLists": "false"
+    "defaultLists": "false"  # No default lists like To Do, Doing, Done
 }
 
 response = requests.post(create_board_url, params=params)
@@ -31,8 +31,9 @@ if response.status_code != 200:
 board = response.json()
 board_id = board["id"]
 print(f"✅ Created Board: {board_name} | ID: {board_id}")
+print(f"🌐 View your board here: https://trello.com/b/{board['shortLink']}")
 
-# Create lists and cards
+# Step 2: Create lists and cards
 for list_data in board_data["lists"]:
     list_name = list_data["name"]
     create_list_url = f"https://api.trello.com/1/lists"
@@ -63,4 +64,4 @@ for list_data in board_data["lists"]:
             print(f"📝  Added card: {card_name}")
         else:
             print(f"⚠️  Failed to add card: {card_name}")
-        time.sleep(0.2)  # Prevent hitting Trello API rate limits
+        time.sleep(0.2)  # Avoid hitting rate limits
