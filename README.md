@@ -1,12 +1,3 @@
-# Trello Board Generator 🚀
-
-![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-Here’s a polished and clean version of your `README.md`, with consistent formatting, badges, and clear sections:
-
----
-
 ````markdown
 # 🚀 Trello Board Generator
 
@@ -155,10 +146,4 @@ Feel free to ⭐️ the repo or [connect with me on LinkedIn](https://www.linked
 
 ---
 
-Let me know if you'd like:
-- Markdown version with collapsible sections
-- A UI version to paste JSON and trigger creation
-- Or deployment to GitHub Pages to expose it as a tool
 
-I'll gladly help!
-```
