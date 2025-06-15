@@ -1,3 +1,8 @@
+# Trello Board Generator 🚀
+
+![GitHub Actions Status](https://github.com/harshithaendreddy/trello-board-creator/actions/workflows/run.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ````markdown
 # 🧩 Trello Board Generator from JSON
 
@@ -94,7 +99,7 @@ Go to your repo → Settings → Secrets → Actions → **New Repository Secret
 .
 ├── .github/
 │   └── workflows/
-│       └── main.yml         # GitHub Action workflow
+│       └── run.yml         # GitHub Action workflow
 ├── DeveloperDashboardBoard.json # Your board definition
 ├── trello_import.py         # Python script to create the board
 └── README.md
