@@ -31,7 +31,7 @@ if response.status_code != 200:
 board = response.json()
 board_id = board["id"]
 print(f"✅ Created Board: {board_name} | ID: {board_id}")
-print(f"🌐 View your board here: https://trello.com/b/{board['shortLink']}")
+print(f"🌐 View your board here: {board['url']}")
 
 # Step 2: Create lists and cards
 for list_data in board_data["lists"]:
