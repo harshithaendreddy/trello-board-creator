@@ -1,7 +1,3 @@
-Sure! Here's your exact `README.md` content, formatted correctly with the markdown block closed properly:
-
----
-
 `````markdown
 # Trello Board Generator 🚀
 
